@@ -1,3 +1,142 @@
-body {
-    font-size: 15pt;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid black;
+  width: 30%;
+  float: left;
+  margin: 1.666%;
+  text-align: center;
+}
+
+.div {
+  width: 90%;
+  margin: auto;
+  height: 50px;
+  margin-top: 10px;
+}
+
+#div1 {
+  background-color: red;
+  /*for browser does not support gradient*/
+  background-image: linear-gradient(red, yellow)
+    /*default transition top to bottom*/
+}
+
+#div2 {
+  background-color: red;
+  /*for browser does not support gradient*/
+  background-image: linear-gradient(to right, red, yellow)
+    /*transition left to right*/
+}
+
+#div3 {
+  background-color: red;
+  /*for browser does not support gradient*/
+  background-image: linear-gradient(to bottom right, red, yellow)
+    /*trangition diagonally to bottom right*/
+}
+
+#div4 {
+  background-color: red;
+  /*for browser does not support gradient*/
+  background-image: linear-gradient(to top right, red, yellow)
+    /*transition diagonally to top right*/
+}
+
+#div5 {
+  background-color: red;
+  /*for browser does not support gradient*/
+  background-image: linear-gradient(180deg, red, yellow)
+    /*transition using degree*/
+}
+
+#div6 {
+  background-color: red;
+  /*for browser does not support gradient*/
+  background-image: linear-gradient(violet, blue, skyblue, green, yellow, orange, red)
+    /*rainbow transition*/
+}
+
+#div7 {
+  background-color: red;
+  /*for browser does not support gradient*/
+  background-image: linear-gradient(90deg, violet, blue, skyblue, green, yellow, orange, red)
+    /*verticle transition rainbow*/
+}
+
+#div8 {
+  background-color: red;
+  /*for browser does not support gradient*/
+  background-image: linear-gradient(violet 10%, black 85%, red 90%)
+    /*custom transition*/
+}
+
+#div9 {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+  /*gradient using transparency*/
+}
+
+#div11 {
+  background-image: radial-gradient(red, yellow, green);
+}
+
+#div12 {
+  background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+}
+
+#div13 {
+  background-image: radial-gradient(circle, red, yellow, green);
+}
+
+#div14 {
+  background-image: radial-gradient(circle at 30% 40%, red, yellow, green);
+  /* changing center */
+}
+
+#div15 {
+  background-image: radial-gradient(closest-side at 60% 70%, red, yellow, green);
+}
+
+#div16 {
+  background-image: radial-gradient(closest-side circle at 60% 70%, red, yellow, green);
+}
+
+#div21 {
+  background-image: conic-gradient(red, yellow, green)
+}
+
+#div22 {
+  background-image: conic-gradient(red, yellow, green, blue, black);
+}
+
+#div23 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: conic-gradient(red, yellow, green, black, blue)
+}
+
+#div24 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: conic-gradient(from 90deg, red, yellow, green, black, blue)
+}
+
+#div25 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: conic-gradient(at 65% 75%, red, yellow, green, black, blue)
+}
+
+#div26 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: conic-gradient(red 0deg, red 72deg, yellow 72deg, yellow 144deg, green 144deg, green 216deg, blue 216deg, blue 288deg, black 288deg, black 360deg)
 }
